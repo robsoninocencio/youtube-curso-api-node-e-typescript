@@ -3,6 +3,14 @@ yarn init -y
 yarn add express
 yarn add -D typescript @types/express ts-node-dev
 yarn add http-status-codes
+yarn add dotenv
+
+yarn tsc --init
+yarn tsc
+
+node ./build/index.js  
+ou
+node build
 
 npx eslint --init
 
