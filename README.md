@@ -2,10 +2,12 @@ Comandos usados:
 yarn init -y
 yarn add express
 yarn add -D typescript @types/express ts-node-dev
+yarn add http-status-codes
 
 npx eslint --init
 
 yarn ts-node-dev ./src/index.ts
+yarn start
 
 Repositório feito no curso:
 📖 Repositório do projeto - https://github.com/robsoninocencio/youtube-curso-api-node-e-typescript
