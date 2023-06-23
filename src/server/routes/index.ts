@@ -10,6 +10,11 @@ router.get('/', (_, res) => {
   );
 });
 
-router.post('/cidades', CidadesController.create);
+router.post(
+  '/cidades',
+  CidadesController.createBodyValidator,
+  CidadesController.createQueryValidator,
+  CidadesController.create
+);
 
 export { router };
