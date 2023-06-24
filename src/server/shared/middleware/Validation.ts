@@ -1,12 +1,15 @@
 import { RequestHandler } from 'express';
+import { AnyObject, Maybe, ObjectSchema, ValidationError } from 'yup';
 import { StatusCodes } from 'http-status-codes';
-import { Schema, ValidationError } from 'yup';
 
 type TPropert = 'body' | 'header' | 'params' | 'query';
 
-type TGetSchema = <T>(schema: Schema<T>) => Schema<T>;
+type TGetSchema = <T extends Maybe<AnyObject>>(
+  schema: ObjectSchema<T>
+) => ObjectSchema<T>;
 
-type TAllSchemas = Record<TPropert, Schema>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type TAllSchemas = Record<TPropert, ObjectSchema<any>>;
 
 type TGetAllSchemas = (getSchema: TGetSchema) => Partial<TAllSchemas>;
 
