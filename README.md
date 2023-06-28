@@ -17,6 +17,12 @@ npx eslint --init
 yarn ts-node-dev ./src/index.ts
 yarn start
 
+yarn add jest ts-jest @types/jest
+yarn jest --init
+
+yarn add -D supertest @types/supertest
+yarn tsc
+
 Repositório feito no curso:
 📖 Repositório do projeto - https://github.com/robsoninocencio/youtube-curso-api-node-e-typescript
 
