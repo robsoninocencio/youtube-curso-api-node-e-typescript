@@ -23,6 +23,9 @@ yarn jest --init
 yarn add -D supertest @types/supertest
 yarn tsc
 
+yarn add knex
+yarn add sqlite -D
+
 Repositório feito no curso:
 📖 Repositório do projeto - https://github.com/robsoninocencio/youtube-curso-api-node-e-typescript
 
@@ -65,3 +68,7 @@ fetch('http://localhost:3333/recurso', {
   console.error(error);
 });
 ```
+
+Publicar a API na vercel:
+https://www.youtube.com/watch?v=FZiza5N6BQU&t=2s
+https://youtube-curso-api-node-e-typescript.vercel.app/cidades/1
