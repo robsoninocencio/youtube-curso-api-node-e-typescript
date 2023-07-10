@@ -13,9 +13,9 @@ export const updateById = async (
 
     if (result > 0) return;
 
-    return new Error('Registro ao atualizar o registro');
+    return new Error('Erro ao atualizar o registro');
   } catch (error) {
     console.log(error);
-    return new Error('Registro ao atualizar o registro');
+    return new Error('Erro ao atualizar o registro');
   }
 };
