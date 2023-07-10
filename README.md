@@ -24,7 +24,11 @@ yarn add -D supertest @types/supertest
 yarn tsc
 
 yarn add knex
-yarn add sqlite -D
+yarn add sqlite3 -D
+
+npm install knex -g
+knex --knexfile ./src/server/database/knex/Environment.ts migrate:latest
+knex --knexfile ./src/server/database/knex/Environment.ts migrate:rollback
 
 Repositório feito no curso:
 📖 Repositório do projeto - https://github.com/robsoninocencio/youtube-curso-api-node-e-typescript
