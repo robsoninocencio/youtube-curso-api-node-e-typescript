@@ -30,6 +30,8 @@ npm install knex -g
 knex --knexfile ./src/server/database/knex/Environment.ts migrate:latest
 knex --knexfile ./src/server/database/knex/Environment.ts migrate:rollback
 
+docker run -v "$(pwd)"/db:/var/lib/postgresql/data --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
 Repositório feito no curso:
 📖 Repositório do projeto - https://github.com/robsoninocencio/youtube-curso-api-node-e-typescript
 
